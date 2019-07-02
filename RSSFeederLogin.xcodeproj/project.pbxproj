@@ -10,6 +10,10 @@
 		B58DE3FE22CB33DD001A80BB /* RSSFeederLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58DE3F422CB33DD001A80BB /* RSSFeederLogin.framework */; };
 		B58DE40322CB33DD001A80BB /* RSSFeederLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE40222CB33DD001A80BB /* RSSFeederLoginTests.swift */; };
 		B58DE40522CB33DD001A80BB /* RSSFeederLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = B58DE3F722CB33DD001A80BB /* RSSFeederLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B58DE41422CB36A6001A80BB /* RSSFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE41322CB36A6001A80BB /* RSSFeeder.swift */; };
+		B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */; };
+		B58DE41822CB386A001A80BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE41722CB386A001A80BB /* LoginViewController.swift */; };
+		B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58DE42E22CB6434001A80BB /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B58DE3FD22CB33DD001A80BB /* RSSFeederLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeederLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58DE40222CB33DD001A80BB /* RSSFeederLoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeederLoginTests.swift; sourceTree = "<group>"; };
 		B58DE40422CB33DD001A80BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B58DE41322CB36A6001A80BB /* RSSFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeeder.swift; sourceTree = "<group>"; };
+		B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
+		B58DE41722CB386A001A80BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B58DE42E22CB6434001A80BB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +81,10 @@
 			children = (
 				B58DE3F722CB33DD001A80BB /* RSSFeederLogin.h */,
 				B58DE3F822CB33DD001A80BB /* Info.plist */,
+				B58DE41322CB36A6001A80BB /* RSSFeeder.swift */,
+				B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */,
+				B58DE41722CB386A001A80BB /* LoginViewController.swift */,
+				B58DE42E22CB6434001A80BB /* Media.xcassets */,
 			);
 			path = RSSFeederLogin;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					B58DE3F322CB33DD001A80BB = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					B58DE3FC22CB33DD001A80BB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -177,6 +190,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */,
+				B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58DE41822CB386A001A80BB /* LoginViewController.swift in Sources */,
+				B58DE41422CB36A6001A80BB /* RSSFeeder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +358,7 @@
 		B58DE40922CB33DD001A80BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -349,6 +367,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RSSFeederLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Epam.RSSFeederLogin;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +385,7 @@
 		B58DE40A22CB33DD001A80BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -373,6 +394,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RSSFeederLogin/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,6 +411,7 @@
 		B58DE40C22CB33DD001A80BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RSSFeederLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +429,7 @@
 		B58DE40D22CB33DD001A80BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RSSFeederLoginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

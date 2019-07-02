@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rMo-tA-8XP">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewControllerIdentifier" id="0mZ-fr-ZcS" customClass="LoginViewController" customModule="RSSFeederLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gpd-yp-xCu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0kC-O9-PHU">
+                                <rect key="frame" x="15" y="304" width="384" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n37-cO-Qsr"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMt-9E-K9Z">
+                                <rect key="frame" x="15" y="382" width="384" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oSc-dT-rfx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lEk-LS-9WU">
+                                <rect key="frame" x="15" y="472" width="384" height="46"/>
+                                <color key="backgroundColor" red="0.89820116760000002" green="0.57637810710000004" blue="0.29010623689999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="wNR-O2-1Vj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rssFeeder" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-oI-cdV">
+                                <rect key="frame" x="147" y="144" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="3G0-1j-dKg"/>
+                                    <constraint firstAttribute="width" secondItem="Jlr-oI-cdV" secondAttribute="height" id="e2G-f4-5ia"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jlr-oI-cdV" firstAttribute="centerX" secondItem="a2m-Fs-VCi" secondAttribute="centerX" id="BoP-jx-JLK"/>
+                            <constraint firstItem="TMt-9E-K9Z" firstAttribute="top" secondItem="0kC-O9-PHU" secondAttribute="bottom" constant="38" id="QK5-hr-ubg"/>
+                            <constraint firstItem="a2m-Fs-VCi" firstAttribute="trailing" secondItem="0kC-O9-PHU" secondAttribute="trailing" constant="15" id="SVu-CB-fDS"/>
+                            <constraint firstItem="0kC-O9-PHU" firstAttribute="leading" secondItem="a2m-Fs-VCi" secondAttribute="leading" constant="15" id="VJk-Dt-pS1"/>
+                            <constraint firstItem="lEk-LS-9WU" firstAttribute="trailing" secondItem="TMt-9E-K9Z" secondAttribute="trailing" id="VjD-AU-UeJ"/>
+                            <constraint firstItem="TMt-9E-K9Z" firstAttribute="trailing" secondItem="0kC-O9-PHU" secondAttribute="trailing" id="dNx-vr-623"/>
+                            <constraint firstItem="TMt-9E-K9Z" firstAttribute="leading" secondItem="0kC-O9-PHU" secondAttribute="leading" id="m9l-B7-GhN"/>
+                            <constraint firstItem="0kC-O9-PHU" firstAttribute="top" secondItem="Jlr-oI-cdV" secondAttribute="bottom" constant="40" id="u8i-VP-Z75"/>
+                            <constraint firstItem="lEk-LS-9WU" firstAttribute="leading" secondItem="TMt-9E-K9Z" secondAttribute="leading" id="uJ9-B6-GsU"/>
+                            <constraint firstItem="lEk-LS-9WU" firstAttribute="top" secondItem="TMt-9E-K9Z" secondAttribute="bottom" constant="50" id="yZi-Nc-x6z"/>
+                            <constraint firstItem="Jlr-oI-cdV" firstAttribute="top" secondItem="a2m-Fs-VCi" secondAttribute="top" constant="100" id="yzf-fX-VV5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2m-Fs-VCi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MF-yt-Arw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350.72463768115944" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rssFeeder" width="600" height="600"/>
+    </resources>
+</document>
