@@ -14,6 +14,9 @@
 		B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */; };
 		B58DE41822CB386A001A80BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE41722CB386A001A80BB /* LoginViewController.swift */; };
 		B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58DE42E22CB6434001A80BB /* Media.xcassets */; };
+		B58DE43122CB9665001A80BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43022CB9665001A80BB /* LoginViewModel.swift */; };
+		B58DE43322CB96D5001A80BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43222CB96D5001A80BB /* LoginView.swift */; };
+		B58DE43522CC8D2D001A80BB /* LoginServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,9 @@
 		B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
 		B58DE41722CB386A001A80BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B58DE42E22CB6434001A80BB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		B58DE43022CB9665001A80BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B58DE43222CB96D5001A80BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +88,7 @@
 				B58DE3F722CB33DD001A80BB /* RSSFeederLogin.h */,
 				B58DE3F822CB33DD001A80BB /* Info.plist */,
 				B58DE41322CB36A6001A80BB /* RSSFeeder.swift */,
-				B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */,
-				B58DE41722CB386A001A80BB /* LoginViewController.swift */,
+				B58DE43622CCD587001A80BB /* Login */,
 				B58DE42E22CB6434001A80BB /* Media.xcassets */,
 			);
 			path = RSSFeederLogin;
@@ -96,6 +101,18 @@
 				B58DE40422CB33DD001A80BB /* Info.plist */,
 			);
 			path = RSSFeederLoginTests;
+			sourceTree = "<group>";
+		};
+		B58DE43622CCD587001A80BB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */,
+				B58DE41722CB386A001A80BB /* LoginViewController.swift */,
+				B58DE43022CB9665001A80BB /* LoginViewModel.swift */,
+				B58DE43222CB96D5001A80BB /* LoginView.swift */,
+				B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58DE43522CC8D2D001A80BB /* LoginServiceLayer.swift in Sources */,
 				B58DE41822CB386A001A80BB /* LoginViewController.swift in Sources */,
 				B58DE41422CB36A6001A80BB /* RSSFeeder.swift in Sources */,
+				B58DE43322CB96D5001A80BB /* LoginView.swift in Sources */,
+				B58DE43122CB9665001A80BB /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,12 +8,17 @@
 
 import Foundation
 
-public protocol RSSFeederCallBackProtocol{
+public protocol RSSFeederLoginCallBack{
     func errorOccuredWhileAuthenticating()
     func userSuccessfullyAuthenticated()
 }
 
-class UserDetails {
+public protocol RSSFeederLogOutCallBack{
+    func errorOccuredWhileLoggingOut()
+    func userSuccessfullyLoggedOut()
+}
+
+fileprivate class UserDetails {
     
 }
 
@@ -23,11 +28,19 @@ public class RSSFeeder {
     
     private let userDetails = UserDetails()
     
-    public static func authenticateTheUser(callBack:RSSFeederCallBackProtocol) {
+    //MARK:- PUBLIC Methods
+    
+    public static func authenticateTheUser(callBack:RSSFeederLoginCallBack) {
         shared.presentLoginViewController(callBack: callBack)
     }
     
-    func presentLoginViewController(callBack:RSSFeederCallBackProtocol) {
+    public static func logoutTheUser(callBack:RSSFeederLogOutCallBack){
+        callBack.userSuccessfullyLoggedOut()
+    }
+    
+    //MARK:- INTERNAL AND PRIVATE Methods
+    
+    func presentLoginViewController(callBack:RSSFeederLoginCallBack) {
         if let loginVC = UIStoryboard(name: "LoginStoryBoard", bundle: Bundle(for: type(of: self))).instantiateViewController(withIdentifier: "LoginViewControllerIdentifier") as? LoginViewController {
             
             loginVC.callBackReference(callBack)
@@ -43,7 +56,7 @@ public class RSSFeeder {
         }
     }
     
-    func updateUserDetails() {
-        
+    func updateUserDetails(data:Any) {
+        print(data)
     }
 }

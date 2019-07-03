@@ -14,7 +14,7 @@
         <scene sceneID="rMo-tA-8XP">
             <objects>
                 <viewController storyboardIdentifier="LoginViewControllerIdentifier" id="0mZ-fr-ZcS" customClass="LoginViewController" customModule="RSSFeederLogin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gpd-yp-xCu">
+                    <view key="view" contentMode="scaleToFill" id="Gpd-yp-xCu" customClass="LoginView" customModule="RSSFeederLogin" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -51,6 +51,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginBtnTapped:" destination="Gpd-yp-xCu" eventType="touchDown" id="S15-b3-8pD"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rssFeeder" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-oI-cdV">
                                 <rect key="frame" x="147" y="144" width="120" height="120"/>
@@ -75,7 +78,16 @@
                             <constraint firstItem="Jlr-oI-cdV" firstAttribute="top" secondItem="a2m-Fs-VCi" secondAttribute="top" constant="100" id="yzf-fX-VV5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a2m-Fs-VCi"/>
+                        <connections>
+                            <outlet property="loginBtn" destination="lEk-LS-9WU" id="oD5-6l-ivl"/>
+                            <outlet property="logoImgVw" destination="Jlr-oI-cdV" id="Sw6-AA-rxZ"/>
+                            <outlet property="passwordTF" destination="TMt-9E-K9Z" id="zND-5n-CZh"/>
+                            <outlet property="userNameTF" destination="0kC-O9-PHU" id="BaQ-46-UYA"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="loginVw" destination="Gpd-yp-xCu" id="ieO-gF-n9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1MF-yt-Arw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
