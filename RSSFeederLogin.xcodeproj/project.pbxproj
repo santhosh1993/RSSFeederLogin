@@ -17,6 +17,7 @@
 		B58DE43122CB9665001A80BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43022CB9665001A80BB /* LoginViewModel.swift */; };
 		B58DE43322CB96D5001A80BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43222CB96D5001A80BB /* LoginView.swift */; };
 		B58DE43522CC8D2D001A80BB /* LoginServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */; };
+		B58DE4D222CF17E1001A80BB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B58DE4D122CF17E1001A80BB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		B58DE43022CB9665001A80BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B58DE43222CB96D5001A80BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceLayer.swift; sourceTree = "<group>"; };
+		B58DE4D122CF17E1001A80BB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 		B58DE3EA22CB33DD001A80BB = {
 			isa = PBXGroup;
 			children = (
+				B58DE4D122CF17E1001A80BB /* README.md */,
 				B58DE3F622CB33DD001A80BB /* RSSFeederLogin */,
 				B58DE40122CB33DD001A80BB /* RSSFeederLoginTests */,
 				B58DE3F522CB33DD001A80BB /* Products */,
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58DE4D222CF17E1001A80BB /* README.md in Resources */,
 				B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */,
 				B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */,
 			);
