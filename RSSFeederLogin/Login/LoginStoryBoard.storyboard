@@ -55,7 +55,7 @@
                                     <action selector="loginBtnTapped:" destination="Gpd-yp-xCu" eventType="touchDown" id="S15-b3-8pD"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rssFeeder" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-oI-cdV">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Feed-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jlr-oI-cdV">
                                 <rect key="frame" x="147" y="144" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="3G0-1j-dKg"/>
@@ -95,6 +95,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="rssFeeder" width="600" height="600"/>
+        <image name="Feed-icon.png" width="1200" height="1200"/>
     </resources>
 </document>

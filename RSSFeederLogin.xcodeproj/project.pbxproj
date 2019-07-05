@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51CF89222CF6CB00072DFAF /* Feed-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B51CF89122CF6CB00072DFAF /* Feed-icon.png */; };
 		B58DE3FE22CB33DD001A80BB /* RSSFeederLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B58DE3F422CB33DD001A80BB /* RSSFeederLogin.framework */; };
 		B58DE40322CB33DD001A80BB /* RSSFeederLoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE40222CB33DD001A80BB /* RSSFeederLoginTests.swift */; };
 		B58DE40522CB33DD001A80BB /* RSSFeederLogin.h in Headers */ = {isa = PBXBuildFile; fileRef = B58DE3F722CB33DD001A80BB /* RSSFeederLogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B58DE41422CB36A6001A80BB /* RSSFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE41322CB36A6001A80BB /* RSSFeeder.swift */; };
 		B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */; };
 		B58DE41822CB386A001A80BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE41722CB386A001A80BB /* LoginViewController.swift */; };
-		B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B58DE42E22CB6434001A80BB /* Media.xcassets */; };
 		B58DE43122CB9665001A80BB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43022CB9665001A80BB /* LoginViewModel.swift */; };
 		B58DE43322CB96D5001A80BB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43222CB96D5001A80BB /* LoginView.swift */; };
 		B58DE43522CC8D2D001A80BB /* LoginServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */; };
@@ -31,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51CF89122CF6CB00072DFAF /* Feed-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Feed-icon.png"; path = "RSSFeederLogin/Login/Feed-icon.png"; sourceTree = SOURCE_ROOT; };
 		B58DE3F422CB33DD001A80BB /* RSSFeederLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSSFeederLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58DE3F722CB33DD001A80BB /* RSSFeederLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSFeederLogin.h; sourceTree = "<group>"; };
 		B58DE3F822CB33DD001A80BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,7 +41,6 @@
 		B58DE41322CB36A6001A80BB /* RSSFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSSFeeder.swift; sourceTree = "<group>"; };
 		B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
 		B58DE41722CB386A001A80BB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B58DE42E22CB6434001A80BB /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		B58DE43022CB9665001A80BB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B58DE43222CB96D5001A80BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B58DE43422CC8D2D001A80BB /* LoginServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceLayer.swift; sourceTree = "<group>"; };
@@ -92,7 +92,6 @@
 				B58DE3F822CB33DD001A80BB /* Info.plist */,
 				B58DE41322CB36A6001A80BB /* RSSFeeder.swift */,
 				B58DE43622CCD587001A80BB /* Login */,
-				B58DE42E22CB6434001A80BB /* Media.xcassets */,
 			);
 			path = RSSFeederLogin;
 			sourceTree = "<group>";
@@ -109,6 +108,7 @@
 		B58DE43622CCD587001A80BB /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B51CF89122CF6CB00072DFAF /* Feed-icon.png */,
 				B58DE41522CB3833001A80BB /* LoginStoryBoard.storyboard */,
 				B58DE41722CB386A001A80BB /* LoginViewController.swift */,
 				B58DE43022CB9665001A80BB /* LoginViewModel.swift */,
@@ -210,8 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51CF89222CF6CB00072DFAF /* Feed-icon.png in Resources */,
 				B58DE4D222CF17E1001A80BB /* README.md in Resources */,
-				B58DE42F22CB6434001A80BB /* Media.xcassets in Resources */,
 				B58DE41622CB3833001A80BB /* LoginStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

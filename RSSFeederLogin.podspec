@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "RSSFeederLogin/**/*.{swift,h,m,xcassets}"
+  spec.source_files  = "RSSFeederLogin/**/*.{h,m,swift,storyboard,png}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -103,7 +103,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  # spec.resources = ["*.png"]
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
